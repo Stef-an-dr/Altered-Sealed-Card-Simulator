@@ -6,7 +6,7 @@ hero_numbers = {"Beyond The Gates" : (1,3), "Trial By Frost" : (1,3), "Whispers 
 factions = ["AX", "BR", "LY", "MU", "OR", "YZ"]
 
 def main():
-    packs = {"Beyond The Gates" : 0, "Trial By Frost" : 0, "Whispers From The Maze" : 0, "Skybound Odyssey" : 0}    
+    packs = {"Beyond The Gates" : 10, "Trial By Frost" : 0, "Whispers From The Maze" : 0, "Skybound Odyssey" : 0}    
     results = defaultdict(int)
     for packType in packs.keys():
         for _ in range(packs[packType]):
@@ -33,7 +33,8 @@ def get_hero_code(expansion: str):
     if(expansion == "Skybound Odyssey"):
         return f"{card_packs.get(expansion)}{random.choice(factions)}_{random.randint(hero_lo, hero_hi)}_C"
     elif(expansion in ("Beyond The Gates","Trial By Frost","Whispers From The Maze")):
-        f"{card_packs.get('Beyond The Gates')}{random.choice(factions)}_0{random.randint(hero_lo, hero_hi)}_C"
+        return f"{card_packs.get('Beyond The Gates')}{random.choice(factions)}_0{random.randint(hero_lo, hero_hi)}_C"
+    return "test"
 
 def get_card_number(expansion: str, faction: str):
     if(expansion == "Skybound Odyssey"): #For Skybound Axiom has no card 76 for some reason
