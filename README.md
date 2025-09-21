@@ -1,8 +1,8 @@
 There are 2 steps to using this:
 
-1) Generating the cards - This script generates the card codes unique to every card that can be found in a pack. You can either run it by downloading/cloning the script and running it locally or making a copy of the following colab file
-   [either](https://colab.research.google.com/drive/1zpH0_yhyDBoveKKxLnguVMyRZ6OpMtPQ?usp=sharing). Change the numbers in the packs variable for each pack to change how many of each it will open.
+1) Generating the cards - This script generates the card codes unique to every card that can be found in a pack. You can either run it by downloading/cloning the script and running it locally or making a copy of the 
+   [following colab file](https://colab.research.google.com/drive/1zpH0_yhyDBoveKKxLnguVMyRZ6OpMtPQ?usp=sharing). Change the numbers in the packs variable for each pack to change how many of each it will open.
 
-2) Using/Viewing the cards - The codes are not really useful for a regular player on their own, so I recommend using [either](https://altered-db.com/) for the collection or grid view features.
+2) Using/Viewing the cards - The codes are not really useful for a regular player on their own, so I recommend using [altered db](https://altered-db.com/) for the collection or grid view features.
 
 If you have any functionality you would like to add, feel free to either start a new project or make a PR for this one. I don't forsee much will be done to this other than adding future sets at this point.
