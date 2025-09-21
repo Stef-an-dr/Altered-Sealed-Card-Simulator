@@ -20,7 +20,7 @@ def main():
             #Generate 3 rare cards
             for rare_cards in range(3):
                 card_faction = random.choice(factions)
-                rare_card_code = f"{card_packs.get(packType)}{random.choice(factions)}_{get_card_number(packType, card_faction)}_R{random.choice(["1","2"])}"
+                rare_card_code = f"{card_packs.get(packType)}{random.choice(factions)}_{get_card_number(packType, card_faction)}_R{random.choice(['1','2'])}"
                 results[rare_card_code] += 1
     for entry in sorted(results.keys()):
         print(f"{results[entry]} {entry}")
@@ -33,7 +33,7 @@ def get_hero_code(expansion: str):
     if(expansion == "Skybound Odyssey"):
         return f"{card_packs.get(expansion)}{random.choice(factions)}_{random.randint(hero_lo, hero_hi)}_C"
     elif(expansion in ("Beyond The Gates","Trial By Frost","Whispers From The Maze")):
-        return f"{card_packs.get("Beyond The Gates")}{random.choice(factions)}_0{random.randint(hero_lo, hero_hi)}_C"
+        f"{card_packs.get('Beyond The Gates')}{random.choice(factions)}_0{random.randint(hero_lo, hero_hi)}_C"
 
 def get_card_number(expansion: str, faction: str):
     if(expansion == "Skybound Odyssey"):
@@ -66,6 +66,8 @@ def pick_from_nonoverlapping(ranges: list[tuple[int, int]]) -> int:
         if k < span:
             return lo + k
         k -= span
+
+    return 0 #should never be reached
 
 
 if __name__ == "__main__":
