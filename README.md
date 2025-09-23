@@ -6,3 +6,8 @@ There are 2 steps to using this:
 2) Using/Viewing the cards - The codes are not really useful for a regular player on their own, so I recommend using [altered db](https://altered-db.com/) for the collection or grid view features and [this simulator](https://exalts-table.com/play) for playing.
 
 If you have any functionality you would like to add, feel free to either fork a new project or make a PR for this one. I am trying to add new features, but there is no set timeline on them - this was initially meant to be a one afternoon project.
+
+I am currently trying to add viewable cards using [Altered-TCG-Card-Database](https://github.com/PolluxTroy0/Altered-TCG-Card-Database).
+
+If you want to clone this: git clone as usual and then make sure to use this to update the card database:
+git submodule update --init --recursive 
